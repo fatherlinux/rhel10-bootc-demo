@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ride Confirmation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ride Confirmation</h1>
+        <p>Your ride from {{ origin }} to {{ destination }} has been requested.</p>
+        <p>Driver: {{ driver }}</p>
+        <p>Estimated Fare: ${{ fare }}</p>
+        <p>Ride ID: {{ ride_id }}</p>
+        <a href="/track_ride/{{ ride_id }}">Track Ride</a>
+    </div>
+</body>
+</html>
